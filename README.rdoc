@@ -1,4 +1,4 @@
-Sample ruby on rails CRUD application deployed to heroku
+Sample ruby on rails CRUD application deployed to heroku.
 It is available in this URL
 
 https://akshaysampleapp.herokuapp.com/
