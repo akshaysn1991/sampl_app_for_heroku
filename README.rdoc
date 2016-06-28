@@ -2,3 +2,43 @@ Sample ruby on rails CRUD application deployed to heroku.
 It is available in this URL
 
 https://akshaysampleapp.herokuapp.com/
+
+
+Steps to deploy rails application to heroku in simple steps
+===========================================================
+
+  step1: Edit your gemfile ie add 'pg' gem for production as follows
+  
+        gemfile.rb
+        ----------
+        
+        group :production do
+          gem 'pg'
+        end
+        
+        group :production do
+          gem 'sqlite3'
+        end
+  
+       Push your changes to github and git branch has to be up-to-date
+  
+  step2: create an account in heroku and enter the login credentials in terminal to get logged into heroku 
+  
+        > heroku login                                 //Authentication has to be successful here
+        
+  step3: create an applicaion in heroku but app name should be unique
+  
+        > heroku create 'unique app name of your choice'                    //ex:  >heroku create todoapp
+        
+  step4: push your source code to heroku from github master branch
+  
+        > git push heroku master             // Here code gets deployed to heroku and gives you a URL
+        
+  step5: migrate the database
+  
+        > heroku run rake db:migrate
+
+
+
+
+
