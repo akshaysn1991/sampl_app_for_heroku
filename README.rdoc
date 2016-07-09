@@ -20,7 +20,7 @@ Steps to deploy rails application to heroku in simple steps
           gem 'sqlite3'
         end
   
-       Push your changes to github and git branch has to be up-to-date
+       Push all your changes to github and make sure your github branch is up-to-date
   
   step2: create an account in heroku and enter the login credentials in terminal to get logged into heroku 
   
